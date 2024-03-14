@@ -1,7 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Img from '../../images/8Ms3s1B.jpeg'
-
 import './index.css'
 
 const ProductItem = props => {

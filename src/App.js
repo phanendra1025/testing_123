@@ -10,6 +10,11 @@ import AddProduct from './components/AddProduct';
 import Orders from './components/Orders';
 import ProductDetails from './components/ProductDetails';
 
+import Clothes from '../src/images/clothes.jpg';
+import Electronics from '../src/images/electronics.jpg';
+import Groceries from '../src/images/groceries.jpg';
+import Shoes from '../src/images/shoes.jpg';
+
 class App extends Component {
 
   state = {
@@ -21,34 +26,42 @@ class App extends Component {
           "Model": "A2643",
           "InStock": true,
           "Manufacturer": "Apple",
-          "ReleaseYear": 2021
+          "ReleaseYear": 2021,
+          "Category": "Electronics",
+          "image": Electronics
       },
       {
           "id": 2,
-          "MobileName": "Samsung Galaxy S21",
-          "Cost": "67000",
+          "MobileName": "USA polo T shirt",
+          "Cost": "1200",
           "Model": "SM-G991U",
           "InStock": true,
-          "Manufacturer": "Samsung",
-          "ReleaseYear": 2021
+          "Manufacturer": "USA polo",
+          "ReleaseYear": 2021,
+          "Category": "Clothes",
+          "image": Clothes
       },
       {
           "id":3,
-          "MobileName": "Google Pixel 6 Pro",
-          "Cost": "72000",
+          "MobileName": "RedTape Cargo pant",
+          "Cost": "720",
           "Model": "GD1YQ",
           "InStock": true,
-          "Manufacturer": "Google",
-          "ReleaseYear": 2021
+          "Manufacturer": "RedTape",
+          "ReleaseYear": 2021,
+          "Category": "Clothes",
+          "image": Clothes
       },
       {
           "id": 4,
-          "MobileName": "OnePlus 9 Pro",
-          "Cost": "80100",
+          "MobileName": "Puma Running Shoes",
+          "Cost": "1499",
           "Model": "LE2110",
           "InStock": false,
-          "Manufacturer": "OnePlus",
-          "ReleaseYear": 2021
+          "Manufacturer": "Puma",
+           "ReleaseYear": 2021,
+          "Category": "Shoes",
+          "image": Shoes
       },
       {
           "id": 5,
@@ -57,52 +70,63 @@ class App extends Component {
           "Model": "M2102K1G",
           "InStock": true,
           "Manufacturer": "Xiaomi",
-          "ReleaseYear": 2021
+          "ReleaseYear": 2021,
+          "Category": "Electronics",
+          "image": Electronics
       },
       {
           "id": 6,
           "MobileName": "Huawei P50 Pro",
-          "Cost": "$120000",
+          "Cost": "120000",
           "Model": "PREM-AN00",
           "InStock": false,
-          "Manufacturer": "Huawei",
-          "ReleaseYear": 2021
+          "ReleaseYear": 2021,
+          "Category": "Electronics",
+          "image": Electronics
       },
       {
           "id": 7,
-          "MobileName": "Sony Xperia 1 III",
-          "Cost": "130000",
+          "MobileName": "Levi's Denim Shirt",
+          "Cost": "4990",
           "Model": "XQ-BC72",
           "InStock": true,
-          "Manufacturer": "Sony",
-          "ReleaseYear": 2021
+          "Manufacturer": "Levi's",
+           "ReleaseYear": 2021,
+          "Category": "Clothes",
+          "image": Clothes
       },
       {
           "id": 8,
-          "Mobile Name": "LG Velvet 2 Pro",
-          "Cost": "80000",
+          "Mobile Name": "Nike Air Jordan",
+          "Cost": "9999",
           "Model": "LM-V710EMW",
           "InStock": true,
-          "Manufacturer": "LG",
-          "ReleaseYear": 2021
+          "Manufacturer": "Nike",
+           "ReleaseYear": 2021,
+          "Category": "Shoes",
+          "image": Shoes
       },
       {
           "id": 9,
-          "MobileName": "Motorola Edge 20 Pro",
+          "MobileName": "Reebook Causals",
           "Cost": "85000",
           "Model": "XT2153-1",
           "InStock": true,
-          "Manufacturer": "Motorola",
-          "ReleaseYear": 2021
+          "Manufacturer": "Reebook",
+           "ReleaseYear": 2021,
+          "Category": "Shoes",
+          "image": Shoes
       },
       {
           "id": 10,
-          "MobileName": "ASUS ROG Phone 5",
+          "MobileName": "GAP hoodie",
           "Cost": "86000",
           "Model": "ZS673KS",
           "InStock": false,
-          "Manufacturer": "ASUS",
-          "ReleaseYear": 2021
+          "Manufacturer": "GAP",
+          "ReleaseYear": 2021,
+          "Category": "Clothes",
+          "image": Clothes
       }
   ],
   }

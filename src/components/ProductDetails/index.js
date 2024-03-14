@@ -1,6 +1,5 @@
 import React, { useContext } from 'react';
 import SideNavbar from '../SideNavbar';
-import Img from '../../images/8Ms3s1B.jpeg';
 import ProductContext from '../../context/ProductContext';
 import './index.css';
 import { Link, useParams } from 'react-router-dom';

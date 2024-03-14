@@ -16,10 +16,11 @@ const AddProduct = () => {
     stackCount: '',
     model: '',
     manufacturedBy: '',
-    releaseYear: ''
+    releaseYear: '',
+    Category: ''
   });
 
-  const { mobileName, price, description, stackCount, model, manufacturedBy, releaseYear } = formData;
+ const { Name,Price, Description, InStack, Model, manufacturedBy, ReleaseYear, Category } = formData;
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -28,8 +29,7 @@ const AddProduct = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     // Assuming addNewProduct is an asynchronous function
-    await addNewProduct(mobileName, price, description, stackCount, model, manufacturedBy, releaseYear);
-    // Navigate to the products page after form submission
+    await addNewProduct(Name,Price, Description, InStack, Model, manufacturedBy, ReleaseYear, Category);    // Navigate to the products page after form submission
     history('/products');
   };
 
@@ -43,13 +43,13 @@ const AddProduct = () => {
             </div>
             <form className="sell-book-form" onSubmit={handleSubmit}>
               <label htmlFor="titleInput" className="sell-label">
-                Mobile Name: <span className="sell-star-txt">*</span>
+                Name: <span className="sell-star-txt">*</span>
               </label>
               <input
                 type="text"
                 id="authorInput"
                 className="sell-input"
-                onChange={handleChange}
+                onChange={handleChange} name='Name'
               />
               <label htmlFor="titleInput" className="sell-label">
                 Price: <span className="sell-star-txt">*</span>
